@@ -1,0 +1,14 @@
+{
+    "require": {
+        "proner/phppimaco": "^1.4"
+    },
+
+    "autoload": {
+        "psr-4": { "Api\\":"src/",
+                   
+                   "Base\\Services\\":"/var/www/html/base/Services",
+                   "Base\\Repositories\\":"/var/www/html/base/Repositories"
+                 
+                 }
+    }
+}

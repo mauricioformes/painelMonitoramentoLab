@@ -1,0 +1,1 @@
+<iframe src="https://cross-origin.com/myvideo.html" allow="autoplay">

@@ -1,0 +1,25 @@
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /index.php/^(.*)$ [L]
+#php_value post_max_size 30M
+#php_value upload_max_filesize 30M
+# Definir o tempo de expiração de sessao para 2 horas (padrão: 24 mins)
+#php_value session.cookie_lifetime 14400
+#php_value session.cache_expire 14400
+#php_value session.gc_maxlifetime 14400
+
+RewriteEngine on
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+#controlar erros
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+#php_flag  log_errors on
+#php_value error_reporting 2039
+#php_value error_log  PHP_errors.log
