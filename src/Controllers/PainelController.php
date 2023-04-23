@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: ghenrique
- * Date: 04/08/2015
- * Time: 08:00
- */
 
 namespace Api\Controllers;
 
